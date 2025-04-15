@@ -102,3 +102,36 @@ export const MainButtonsDiv = styled.div`
     border: 2px solid #0e3b51;
   }
 `;
+
+export const CardsSection = styled.section`
+  padding: 3rem 0 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+`;
+
+export const CardsTitle = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  letter-spacing: 0px;
+
+  & h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  & h3 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+  }
+`;
+
+export const BenefitsCards = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+`;
