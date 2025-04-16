@@ -1,4 +1,5 @@
 import BenefitsCard from "./components/BenefitsCard";
+import ContactMedia from "./components/ContactMedia";
 import GetInsuredStepCard from "./components/GetInsuredStepCard";
 import {
   Nav,
@@ -12,12 +13,24 @@ import {
   GetInsuredSection,
   GetInsuredDiv,
   GetInsuredSteps,
+  ContactSection,
+  ContactIntro,
+  ContactLinks,
+  ContactSuscribe,
+  ContactSuscribeFormDiv,
+  ContactLogos,
+  ContactMediaDiv,
 } from "./styles/App.styles";
 import { benefits } from "./data/BenefitsCards";
 import { getInsuredSteps } from "./data/getInsuredSteps";
 import hamburgerMenu from "/Hamburger_icon.png";
 import mainImg from "/main_img.jpeg";
 import insureContractImg from "/insureContract.png";
+import emailLogo from "/emailLogo.png";
+import facebookLogo from "/facebookLogo.png";
+import phoneLogo from "/phoneLogo.png";
+import twitterLogo from "/twitterLogo.png";
+
 import "./App.css";
 
 function App() {
@@ -107,6 +120,51 @@ function App() {
           </GetInsuredSteps>
         </GetInsuredDiv>
       </GetInsuredSection>
+
+      <ContactSection>
+        <ContactIntro>
+          <h2>Shield Plus</h2>
+          <p>
+            Providing reliable coverage for health, life, travel, and assets
+            with seamless claim processes and 24/7 support.
+          </p>
+        </ContactIntro>
+
+        <ContactLinks>
+          <h3>Quick Links</h3>
+          <div>
+            <a href="">Insurance Plans</a>
+            <a href="">Customer Support</a>
+            <a href="">Claims Assistance</a>
+            <a href="">About Us</a>
+          </div>
+        </ContactLinks>
+
+        <ContactSuscribe>
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>
+            Providing reliable coverage for health, life, travel, and assets
+            with seamless claim processes and 24/7 support.
+          </p>
+
+          <ContactSuscribeFormDiv>
+            <input type="text" placeholder="Enter Your Email" />
+            <button>Subscribe</button>
+          </ContactSuscribeFormDiv>
+
+          <ContactLogos>
+            <img src={twitterLogo} alt="" />
+            <img src={facebookLogo} alt="" />
+          </ContactLogos>
+        </ContactSuscribe>
+
+        <ContactMediaDiv>
+          <ContactMedia imgSrc={phoneLogo}>+(123) 456-7890</ContactMedia>
+          <ContactMedia imgSrc={emailLogo}>
+            support@Shield Plus.com
+          </ContactMedia>
+        </ContactMediaDiv>
+      </ContactSection>
     </Container>
   );
 }
