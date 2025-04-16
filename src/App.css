@@ -6,9 +6,9 @@
   display: none;
 }
 
-@media screen and (min-width: 1260px) {
+@media screen and (min-width: 1040px) {
   .mobile {
-    display: none;
+    display: none !important;
   }
 
   .desktop {

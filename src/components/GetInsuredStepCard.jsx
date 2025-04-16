@@ -26,6 +26,12 @@ export const StepDiv = styled.div`
   & #step-content {
     flex: 5;
   }
+
+  @media screen and (min-width: 1260px) {
+    & #step-content {
+      flex: 8;
+    }
+  }
 `;
 
 function GetInsuredStepCard({ title, text, index }) {

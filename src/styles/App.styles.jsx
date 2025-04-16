@@ -6,6 +6,10 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   gap: 3rem;
+
+  @media screen and (min-width: 1260px) {
+    gap: 5rem;
+  }
 `;
 
 export const Nav = styled.nav`
@@ -38,10 +42,61 @@ export const Nav = styled.nav`
     text-align: center;
     color: white;
   }
+
+  @media screen and (min-width: 1260px) {
+    & h4 {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 42px;
+      letter-spacing: 0px;
+    }
+
+    & #login {
+      height: 100%;
+      border: none;
+      border-bottom: 2px solid #0e3b51;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0px;
+    }
+
+    & #get-started {
+      width: 141px;
+      height: 47px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+`;
+
+export const NavOptions = styled.div`
+  display: flex;
+  gap: 1rem;
+
+  & a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #0e3b51;
+    text-decoration: none;
+  }
+`;
+
+export const NavButtons = styled.div`
+  @media screen and (min-width: 1260px) {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
 `;
 
 export const MainSection = styled.section`
   display: flex;
+
+  @media screen and (min-width: 1260px) {
+  }
 `;
 
 export const MainSectionDiv = styled.div`
@@ -74,6 +129,24 @@ export const MainSectionDiv = styled.div`
     line-height: 27px;
     color: #0e3b51;
   }
+
+  @media screen and (min-width: 1260px) {
+    width: 50%;
+    align-items: flex-start;
+    text-align: left;
+  }
+`;
+
+export const MainSectionImg = styled.div`
+  @media screen and (min-width: 1260px) {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+
+    & img {
+      border-radius: 18px;
+    }
+  }
 `;
 
 export const MainButtonsDiv = styled.div`
@@ -102,6 +175,10 @@ export const MainButtonsDiv = styled.div`
   & > #plans {
     border: 2px solid #0e3b51;
   }
+
+  @media screen and (min-width: 1260px) {
+    flex-direction: row;
+  }
 `;
 
 export const CardsSection = styled.section`
@@ -129,12 +206,29 @@ export const CardsTitle = styled.div`
     font-size: 18px;
     line-height: 27px;
   }
+
+  @media screen and (min-width: 1260px) {
+    align-items: flex-start;
+    width: 48%;
+    text-align: left;
+
+    & h2 {
+      font-size: 38px;
+      line-height: 57px;
+    }
+  }
 `;
 
 export const BenefitsCards = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
+  @media screen and (min-width: 1260px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
 `;
 
 export const GetInsuredSection = styled.section`
@@ -142,6 +236,19 @@ export const GetInsuredSection = styled.section`
 
   @media screen and (min-width: 1260px) {
     gap: 1rem;
+  }
+`;
+
+export const GetInsuredImg = styled.div`
+  @media screen and (min-width: 1260px) {
+    display: flex;
+    align-items: center;
+    width: 48%;
+    padding-right: 1rem;
+
+    & img {
+      width: 100%;
+    }
   }
 `;
 
@@ -165,6 +272,18 @@ export const GetInsuredDiv = styled.div`
     line-height: 27px;
     margin-bottom: 2rem;
   }
+
+  @media screen and (min-width: 1260px) {
+    justify-content: space-evenly;
+    width: 52%;
+    text-align: left;
+    align-items: flex-start;
+
+    & > h2 {
+      font-size: 38px;
+      line-height: 57px;
+    }
+  }
 `;
 
 export const GetInsuredSteps = styled.div`
@@ -175,6 +294,10 @@ export const GetInsuredSteps = styled.div`
   text-align: left;
   letter-spacing: 0px;
   color: #0e3b51;
+
+  @media screen and (min-width: 1260px) {
+    margin-top: 0;
+  }
 `;
 
 export const ContactSection = styled.section`
@@ -183,6 +306,14 @@ export const ContactSection = styled.section`
   flex-direction: column;
   gap: 6rem;
   padding: 2rem;
+
+  @media screen and (min-width: 1260px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 3rem;
+    padding: 2rem 0;
+  }
 `;
 
 export const ContactIntro = styled.div`
@@ -205,6 +336,15 @@ export const ContactIntro = styled.div`
     font-size: 18px;
     line-height: 27px;
     color: #0e3b51;
+  }
+
+  @media screen and (min-width: 1260px) {
+    text-align: left;
+    align-items: flex-start;
+
+    h2 {
+      height: 57px;
+    }
   }
 `;
 
@@ -238,6 +378,24 @@ export const ContactLinks = styled.div`
     text-decoration: none;
     color: #0e3b51;
   }
+
+  @media screen and (min-width: 1260px) {
+    text-align: left;
+    align-items: flex-start;
+
+    h3 {
+      height: 57px;
+    }
+
+    & div {
+      text-align: left;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      gap: 2rem;
+      grid-row: 1 / 3;
+    }
+  }
 `;
 
 export const ContactSuscribe = styled.div`
@@ -260,6 +418,11 @@ export const ContactSuscribe = styled.div`
     font-size: 12px;
     line-height: 18px;
     color: #0e3b51;
+  }
+
+  @media screen and (min-width: 1260px) {
+    text-align: left;
+    align-items: flex-start;
   }
 `;
 
@@ -311,6 +474,12 @@ export const ContactLogos = styled.div`
   & img {
     height: 36px;
   }
+
+  @media screen and (min-width: 1260px) {
+    text-align: left;
+    justify-content: flex-start;
+    gap: 5rem;
+  }
 `;
 
 export const ContactMediaDiv = styled.div`
@@ -318,12 +487,26 @@ export const ContactMediaDiv = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
+
+  @media screen and (min-width: 1260px) {
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 2rem;
+  }
 `;
 
 export const Footer = styled.footer`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+
+  @media screen and (min-width: 1260px) {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #0e3b51;
+  }
 `;
 
 export const FooterLinks = styled.div`
@@ -339,6 +522,17 @@ export const FooterLinks = styled.div`
     letter-spacing: 0px;
     color: #0e3b51;
   }
+
+  @media screen and (min-width: 1260px) {
+    gap: 4rem;
+    align-items: flex-end;
+    padding: 0;
+
+    & a {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
 `;
 
 export const FooterCopyright = styled.div`
@@ -349,4 +543,8 @@ export const FooterCopyright = styled.div`
   letter-spacing: 0px;
   color: #0e3b51;
   border-top: 1px solid #0e3b51;
+
+  @media screen and (min-width: 1260px) {
+    border: none;
+  }
 `;

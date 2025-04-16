@@ -23,6 +23,10 @@ import {
   Footer,
   FooterLinks,
   FooterCopyright,
+  NavOptions,
+  NavButtons,
+  MainSectionImg,
+  GetInsuredImg,
 } from "./styles/App.styles";
 import { benefits } from "./data/BenefitsCards";
 import { getInsuredSteps } from "./data/getInsuredSteps";
@@ -40,15 +44,24 @@ function App() {
   return (
     <Container>
       <Nav>
-        <img src={hamburgerMenu} alt="Hamburger icon" />
+        <img src={hamburgerMenu} alt="Hamburger icon" className="mobile" />
         <h4>Shield Plus</h4>
 
-        <div>
+        <NavOptions className="desktop">
+          <a href="">Home</a>
+          <a href="">Plans</a>
+          <a href="">Benefits</a>
+          <a href="">Claims</a>
+          <a href="">Testimonials</a>
+          <a href="">Contact Us</a>
+        </NavOptions>
+
+        <NavButtons>
           <button className="desktop" id="login">
             Login
           </button>
           <button id="get-started">Get Started</button>
-        </div>
+        </NavButtons>
       </Nav>
 
       <MainSection>
@@ -71,9 +84,9 @@ function App() {
           </MainButtonsDiv>
         </MainSectionDiv>
 
-        <div className="desktop">
+        <MainSectionImg className="desktop">
           <img src={mainImg} alt="" />
-        </div>
+        </MainSectionImg>
       </MainSection>
 
       <CardsSection>
@@ -100,9 +113,9 @@ function App() {
       </CardsSection>
 
       <GetInsuredSection>
-        <div>
+        <GetInsuredImg>
           <img src={insureContractImg} alt="" className="desktop" />
-        </div>
+        </GetInsuredImg>
 
         <GetInsuredDiv>
           <h2>Getting Insured Is Simple & Fast</h2>
@@ -131,6 +144,13 @@ function App() {
             Providing reliable coverage for health, life, travel, and assets
             with seamless claim processes and 24/7 support.
           </p>
+
+          <ContactMediaDiv className="desktop">
+            <ContactMedia imgSrc={phoneLogo}>+(123) 456-7890</ContactMedia>
+            <ContactMedia imgSrc={emailLogo}>
+              support@Shield Plus.com
+            </ContactMedia>
+          </ContactMediaDiv>
         </ContactIntro>
 
         <ContactLinks>
@@ -161,7 +181,7 @@ function App() {
           </ContactLogos>
         </ContactSuscribe>
 
-        <ContactMediaDiv>
+        <ContactMediaDiv className="mobile">
           <ContactMedia imgSrc={phoneLogo}>+(123) 456-7890</ContactMedia>
           <ContactMedia imgSrc={emailLogo}>
             support@Shield Plus.com
