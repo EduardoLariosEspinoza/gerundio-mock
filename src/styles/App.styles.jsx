@@ -319,3 +319,34 @@ export const ContactMediaDiv = styled.div`
   align-items: center;
   gap: 1.5rem;
 `;
+
+export const Footer = styled.footer`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+`;
+
+export const FooterLinks = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+
+  & a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #0e3b51;
+  }
+`;
+
+export const FooterCopyright = styled.div`
+  padding-top: 2.5rem;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: #0e3b51;
+  border-top: 1px solid #0e3b51;
+`;

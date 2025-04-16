@@ -20,6 +20,9 @@ import {
   ContactSuscribeFormDiv,
   ContactLogos,
   ContactMediaDiv,
+  Footer,
+  FooterLinks,
+  FooterCopyright,
 } from "./styles/App.styles";
 import { benefits } from "./data/BenefitsCards";
 import { getInsuredSteps } from "./data/getInsuredSteps";
@@ -165,6 +168,18 @@ function App() {
           </ContactMedia>
         </ContactMediaDiv>
       </ContactSection>
+
+      <Footer>
+        <FooterLinks>
+          <a href="">Terms & Conditions</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Licensing</a>
+        </FooterLinks>
+
+        <FooterCopyright>
+          <p>© 2025 Shield Plus. All Rights Reserved.</p>
+        </FooterCopyright>
+      </Footer>
     </Container>
   );
 }
