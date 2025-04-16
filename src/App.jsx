@@ -9,6 +9,9 @@ import {
   CardsSection,
   CardsTitle,
   BenefitsCards,
+  GetInsuredSection,
+  GetInsuredDiv,
+  GetInsuredSteps,
 } from "./styles/App.styles";
 import { benefits } from "./data/BenefitsCards";
 import { getInsuredSteps } from "./data/getInsuredSteps";
@@ -80,29 +83,30 @@ function App() {
         </BenefitsCards>
       </CardsSection>
 
-      <section>
+      <GetInsuredSection>
         <div>
           <img src={insureContractImg} alt="" className="desktop" />
         </div>
 
-        <div>
+        <GetInsuredDiv>
           <h2>Getting Insured Is Simple & Fast</h2>
           <h3>Follow these easy steps to secure your insurance plan today. </h3>
           <img src={insureContractImg} alt="" className="mobile" />
 
-          <div>
+          <GetInsuredSteps>
             {getInsuredSteps.map((step, index) => {
               return (
                 <GetInsuredStepCard
                   title={step.title}
                   text={step.text}
+                  index={index}
                   key={index}
                 />
               );
             })}
-          </div>
-        </div>
-      </section>
+          </GetInsuredSteps>
+        </GetInsuredDiv>
+      </GetInsuredSection>
     </Container>
   );
 }

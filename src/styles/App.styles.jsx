@@ -47,6 +47,7 @@ export const MainSection = styled.section`
 export const MainSectionDiv = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   gap: 1rem;
   letter-spacing: 0px;
@@ -134,4 +135,44 @@ export const BenefitsCards = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+`;
+
+export const GetInsuredSection = styled.section`
+  display: flex;
+
+  @media screen and (min-width: 1260px) {
+    gap: 1rem;
+  }
+`;
+
+export const GetInsuredDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 0px;
+  color: #0e3b51;
+  text-align: center;
+
+  & > h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  & > h3 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 2rem;
+  }
+`;
+
+export const GetInsuredSteps = styled.div`
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #0e3b51;
 `;
